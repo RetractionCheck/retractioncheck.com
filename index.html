@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetractionCheck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --primary-color: #739d31; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-white shadow p-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <div id="logo">
+                <img src="/assets/images/logo.png" alt="RetractionCheck Logo" class="h-10">
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#why" class="text-gray-800 hover:text-green-600">Why RetractionCheck?</a></li>
+                    <li><a href="#who" class="text-gray-800 hover:text-green-600">Who We Are</a></li>
+                    <li><a href="#data" class="text-gray-800 hover:text-green-600">Data Sources</a></li>
+                    <li><a href="#future" class="text-gray-800 hover:text-green-600">Future Integration</a></li>
+                    <li><a href="#disclaimer" class="text-gray-800 hover:text-green-600">Disclaimer</a></li>
+                    <li><a href="contact.html" class="text-gray-800 hover:text-green-600">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button id="loginButton" class="bg-green-600 text-white px-4 py-2 rounded-md">Login</button>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-4xl mx-auto p-5">
+        <section id="why" class="my-10">
+            <h2 class="text-2xl font-bold text-gray-700">Why RetractionCheck?</h2>
+            <p class="mt-2 text-gray-600">
+              In the academic and research community, unintentional citation of retracted articles
+              remains a significant concern. Studies have shown that many authors are unaware
+              of the retraction status of the works they cite, leading to the propagation of invalid or
+              flawed data. Although the Retraction Watch Database covers much of the
+              retractions, there is no single repository encompassing all retracted publications.
+              This issue is exacerbated by the fragmentation of retraction notifications and the lack
+              of adequate information on the labelling of retractions across multiple publishing
+              platforms and databases. To address this challenge, we have developed
+              RetractionCheck, a free, non-profit service offering a federated search system that
+              consolidates retraction data from various sources. Currently, our platform integrates
+              publicly available APIs from the Retraction Watch Database (via CrossRef), PubMed,
+              and Scopus.
+              <br><br>
+              We are actively seeking support and funding to incorporate additional APIs from Web
+              of Science, PubPeer, and the full Scopus API, aiming to provide comprehensive
+              coverage. Our user-friendly interface allows authors to upload and verify their
+              reference lists in multiple formats, including BibTeX, IEEE, Chicago Manual of Style,
+              MLA, and APA, ensuring compatibility with diverse citation management tools. By
+              enabling researchers to cross-check their references efficiently, we strive to reduce
+              the incidence of post-retraction citations, thereby enhancing the integrity of scholarly
+              communication. We also advocate for integrating our service into peer review
+              processes and editorial workflows as a proactive measure to identify and address
+              retracted or questionable articles before publication. Through these efforts,
+              RetractionCheck is committed to supporting the scientific community in maintaining
+              rigorous research quality and trustworthiness standards.
+            </p>
+        </section>
+        <section id="who" class="my-10">
+            <h2 class="text-2xl font-bold text-gray-700">Who We Are</h2>
+            <p class="mt-2 text-gray-600">
+              RetractionCheck is a collaborative initiative dedicated to enhancing the integrity of
+              scholarly research by providing a centralized platform for identifying retracted
+              articles, especially from compiled reference lists. This project was conceived as part
+              of the research endeavours of the following:            
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <div class="bg-white shadow-md rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800">Concept and Project Lead</h3>
+                    <p class="text-gray-600 pt-2">
+                      Mr Biju V. V., Librarian at Sacred Heart College
+                      (Autonomous), Thevara, Kochi, Kerala, India &amp; Research Scholar, Research
+                      and Postgraduate Department of Library and Information Science, Bishop
+                      Heber College (affiliated to Bharathidasan University), Tiruchirappalli, Tamil
+                      Nadu, India
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800">Concept and Project Co-Lead</h3>
+                    <p class="text-gray-600 pt-2">
+                      Mr Sanjo Jose, Librarian at St. Thomas
+                      College, Thrissur (Autonomous), Kerala, India &amp; Research Scholar, Research
+                      and Postgraduate Department of Library and Information Science, Bishop Heber College (affiliated to Bharathidasan University), Tiruchirappalli, Tamil
+                      Nadu, India                    
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800">Lead Developer</h3>
+                    <p class="text-gray-600 pt-2">
+                      Mr Santhosh Kumar K. P., Assistant Professor in the
+                      Department of Computer Science, Sacred Heart College (Autonomous),
+                      Thevara, Kochi, Kerala, India
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800">Implementation</h3>
+                    <p class="text-gray-600 pt-2">
+                      Mr. Abdul Hakkeem P A, a postgraduate student from the
+                      Department of Computer Science at Cochin University of Science and
+                      Technology (CUSAT), Kochi, Kerala, India
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800">Advisor</h3>
+                    <p class="text-gray-600 pt-2">
+                      Dr. Franklin J., Assistant Professor and Head of the Research and
+                      Postgraduate Department of Library and Information Science, Bishop
+                      Heber College (affiliated to Bharathidasan University), Tiruchirappalli,
+                      Tamil Nadu, India
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-5">
+                    <h3 class="text-xl font-semibold text-gray-800">Advisor</h3>
+                    <p class="text-gray-600 pt-2">
+                      Dr Giby Kuriakose, Assistant Professor in the Department of Botany,
+                      Sacred Heart College (Autonomous), Thevara, Kochi, Kerala, India
+                    </p>
+                </div>
+            </div>
+
+
+            <p class="pt-3 pb-3 text-gray-600">
+              Hosted as a startup project at Sacred Heart College, RetractionCheck operates
+              independently without external funding. Our mission is to support the scientific
+              community by offering a free, user-friendly tool that enables researchers to verify the
+              retraction status of articles, thereby promoting accuracy and trust in academic
+              publications.
+            </p>
+
+
+        </section>
+
+        <section id="data" class="my-10">
+          <h2 class="text-2xl font-bold text-gray-700">Data Sources & Credits</h2>
+          <p class="mt-2 text-gray-600">
+            RetractionCheck aggregates retraction data from multiple trusted sources to ensure the
+            veracity of scholarly references. Our platform integrates with various public and proprietary
+            APIs to track retractions across disciplines. Below are the key data sources we utilize, along
+            with their roles in retraction tracking and citation verification.
+
+            <ol class="list-decimal pl-5">
+              <li class="mt-2">
+                <h3 class="text-xl font-semibold text-gray-800">Retraction Watch Database</h3>
+                <p class="text-gray-600">
+                  The Retraction Watch Database (RWD) is a widely recognised repository that tracks
+                  retracted papers across various disciplines. It provides in-depth information on academic
+                  publications and reasons for their retraction. RetractionCheck uses RWD to cross-check
+                  references and alert users about retracted articles. This allows researchers to quickly identify
+                  problematic papers before citing them, even after generating a reference/works cited list.
+                  Through its CrossRef API, RetractionCheck retrieves DOI metadata, retraction notices, and
+                  related corrections issued by publishers. This ensures users can access verified, publisher-
+                  provided retraction information, allowing for accurate citation management.                </p>
+              </li>
+              <li class="mt-2">
+                <h3 class="text-xl font-semibold text-gray-800">PubMed</h3>
+                <p class="text-gray-600">
+                  PubMed, maintained by the National Library of Medicine (NLM), is a key resource for
+                  biomedical literature. Its API provides retraction metadata for articles indexed in the PubMed
+                  database, ensuring that researchers in medicine and life sciences can verify whether any cited
+                  work has been retracted. By integrating the PubMed API, RetractionCheck helps prevent the
+                  inadvertent citation of retracted biomedical research, which is especially critical in clinical
+                  and biochemical studies.                </p>
+              </li>
+              <li class="mt-2">
+                <h3 class="text-xl font-semibold text-gray-800">Scopus</h3>
+                <p class="text-gray-600">
+                  Scopus is a widely used multidisciplinary database that provides extensive citation
+                    data and bibliometric insights. At present, RetractionCheck is utilizing the Scopus
+                    public API, which allows for basic data retrieval but has limitations in data-fetching
+                    rates and metadata completeness. Due to these restrictions, some retraction
+                    information may not always be fully accessible in our system. In the next phase, we
+                    plan to integrate the full Scopus API, which will grant deeper citation tracking,
+                    complete metadata access, and real-time retraction updates.
+
+                    public API, which allows for basic data retrieval but has limitations in data-fetching
+                  rates and metadata completeness. Due to these restrictions, some retraction
+                  information may not always be fully accessible in our system. In the next phase, we
+                  plan to integrate the full Scopus API, which will grant deeper citation tracking,
+                  complete metadata access, and real-time retraction updates.                </p>
+              </li>
+            </ol>
+
+
+          </p>
+      </section>
+
+
+        <section id="future" class="my-10">
+            <h2 class="text-2xl font-bold text-gray-700">Future Integration</h2>        
+            <ol class="list-decimal pl-5">
+              <li class="mt-2">
+                <h3 class="text-xl font-semibold text-gray-800">Web of Science</h3>
+                <p class="text-gray-600">
+                  Web of Science is one of the most authoritative citation indexing databases, covering
+                  many high-impact journals across disciplines. Its integration into RetractionCheck will
+                  enhance our ability to track retracted papers and their citation networks, ensuring
+                  that researchers have access to verified information about the reliability of their
+                  references. Currently, Web of Science’s API requires institutional licensing and
+                  additional funding, but once integrated, it will provide more comprehensive
+                  metadata and robust retraction tracking, ensuring that researchers and publishers
+                  have the most up-to-date information before citing a source.  
+                </p>
+              </li>
+              <li class="mt-2">
+                <h3 class="text-xl font-semibold text-gray-800">PubPeer</h3>
+                <p class="text-gray-600">
+                  In addition to the above databases, we plan to integrate PubPeer, a post-publication peer
+                  review platform highlighting concerns about research integrity. By incorporating PubPeer’s
+                  API, we aim to alert researchers to articles flagged for ethical considerations or potential
+                  retraction, even before they are formally withdrawn.  
+                </p>
+              </li>
+            </ol>
+
+            <p class="mt-2 text-gray-600">  
+              The trademarks mentioned above are the proprietary properties of the respective owners. The
+              trademarks mentioned on this website is solely for descriptive and informational purposes,
+              referring to our integration with the services under them for retrieving retraction metadata.
+              <br><br>
+              All rights to these are reserved with their respective owners. Any references to these
+              trademarks on this platform do not imply any ownership, partnership, or formal association
+              with their owners. Users are encouraged to refer to the official websites of these services for
+              their licensing terms, for further details on their data policies and for access restrictions.
+            </p>
+
+          </section>
+        <section id="disclaimer" class="my-10">
+            <h2 class="text-2xl font-bold text-gray-700">Disclaimer</h2>
+            <p class="mt-2 text-gray-600">
+              The information provided on RetractionCheck is intended for general information
+              purposes only and is not a substitute for professional advice. While we strive to
+              ensure the accuracy and timeliness of the data presented, we make no
+              representations or warranties of any kind, express or implied, about the
+              completeness, accuracy, reliability, suitability, or availability of the information on the
+              website. Users are responsible for verifying the retraction status of articles through
+              official channels and should not rely solely on the data provided here.
+
+              <br><br>
+
+              RetractionCheck utilizes publicly accessible APIs from PubMed, CrossRef, and
+              Scopus databases to aggregate retraction information. However, we do not control
+              these external sources and cannot guarantee the consistency or comprehensiveness
+              of the data retrieved.
+
+              <br><br>
+
+              By using this website, you acknowledge and agree that RetractionCheck, its
+              creators, and contributors shall not be liable for any loss or damage arising from the
+              use of, or reliance on, the information provided herein. This includes, without
+              limitation, indirect or consequential loss or damage, or any loss or damage
+              whatsoever arising from loss of data or profits.
+
+              <br><br>
+
+              We reserve the right to modify, update, or remove any part of this website without
+              prior notice. Your continued use of the site constitutes acceptance of these terms
+              and any changes thereto. If you do not agree with this disclaimer, please discontinue
+              the use of RetractionCheck immediately.
+            </p>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-5 text-center">
+        <!-- <div id="footer-logo" class="mb-2">
+            <img src="/assets/images/logo.png" alt="RetractionCheck Logo" class="h-8 mx-auto">
+        </div> -->
+        <p>Copyright &copy; 2025 RetractionCheck, Sacred Heart College, Kochi</p>
+    </footer>
+</body>
+</html>
